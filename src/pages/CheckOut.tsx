@@ -14,7 +14,7 @@ const CheckOut = () => {
     try {
       // Hit the API and send the amount
       const res = await axios.post(
-        "http://localhost:3000/create-checkout-session",
+        "https://qr-pay-hono-react.onrender.com/create-checkout-session",
         {
           amount: parseFloat(amount),
           currency: "usd",
